@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5ffe0252b2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;300;700&family=Joan&family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        background-color: rgb(83, 79, 79);
+        font-family: 'Anek Malayalam', sans-serif;
+        font-family: 'Joan', serif;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    .containerD {
+        width: 650%;
+        overflow: hidden;
+        height: 800px;
+        margin: auto;
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+    
+    .sradio {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        gap: 10px;
+        overflow-x: hidden;
+        border-radius: 10px;
+    }
+    
+    .slidImage {
+        width: 33%;
+        height: 80%;
+        border: 2px solid rgb(249, 155, 236);
+        border-radius: 10px;
+        margin-top: 2px;
+        overflow-x: hidden;
+    }
+    
+    .slidImage>img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    
+    .navigation {
+        width: 100%;
+        height: 25px;
+        display: flex;
+        gap: 3px;
+        flex-direction: row-reverse;
+        border-radius: 1px;
+    }
+    
+    .bar {
+        width: 100px;
+        height: 100%;
+        border-right: 1px solid rgb(249, 155, 236);
+        color: aliceblue;
+        opacity: 70%;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .bar:hover {
+        cursor: pointer;
+    }
+    
+    input[name="r"] {
+        position: absolute;
+        visibility: hidden;
+    }
+    
+    .slidImage {
+        width: 30%;
+        border-radius: 2px solid rgb(210, 97, 195);
+        transition: 0.6s;
+    }
+    
+    .slidImage>img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #r1:checked~.s1 {
+        margin-left: -150.7%;
+    }
+    
+    #r2:checked~.s1 {
+        margin-left: -120.5%;
+    }
+    
+    #r3:checked~.s1 {
+        margin-left: -90.4%;
+    }
+    
+    #r4:checked~.s1 {
+        margin-left: -50%;
+    }
+    
+    #r5:checked~.s1 {
+        margin-left: -20%;
+    }
+    
+    #r6:checked~.s1 {
+        margin-left: 0;
+    }
+    
+    .fa-solid {
+        color: aliceblue;
+        margin-right: 3px;
+    }
+</style>
+
+<body>
+
+    <h1>Deep Raj Singh</h1>
+
+    <div class="navigation">
+        <label for="r1" class="bar"><i class="fa-solid fa-file"></i> Resume</label>
+        <label for="r2" class="bar"><i class="fa-solid fa-phone"></i>Contact</label>
+        <label for="r3" class="bar"><i class="fa-solid fa-desktop"></i>Project</label>
+        <label for="r4" class="bar"><i class="fa-sharp fa-solid fa-wrench"></i> Skill</label>
+        <label for="r5" class="bar"><i class="fa-solid fa-user"></i>About</label>
+        <label for="r6" class="bar"><i class="fa-solid fa-house"></i>Home</label>
+
+
+    </div>
+    <div class="containerD">
+
+
+        <div class="sradio">
+            <input type="radio" name="r" id="r1">
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+            <input type="radio" name="r" id="r5">
+            <input type="radio" name="r" id="r6">
+
+
+
+
+            <div class="slidImage s1">6</div>
+            <div class="slidImage">5</div>
+            <div class="slidImage">4</div>
+            <div class="slidImage">3</div>
+            <div class="slidImage">2</div>
+            <div class="slidImage">1</div>
+
+            <!-- 
+            <img src="https://www.naturesbasket.co.in/Images/homepageblogbanner/NB_1320x355-blog2.jpg" alt="">
+            <img src="https://www.naturesbasket.co.in/Images/homepageblogbanner/NB_paneerBlog_banner.jpg" alt="">
+            <img src="https://www.naturesbasket.co.in/Images/homepageblogbanner/NB_pastaBlog_banner.jpg" alt=""> -->
+
+        </div>
+
+    </div>
+</body>
+
+</html>
